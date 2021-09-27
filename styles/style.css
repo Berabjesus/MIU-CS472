@@ -1,9 +1,29 @@
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+ul > li{
+  list-style-type: none;
+}
+
+ul li:before {
+  content: '✓'; 
+ }
+
 .debug_border {
   border: 3px dashed red;
 }
 
+.theme-bg1 {
+  background-color: #000023;
+}
+
 .header {
   height: 10rem;
+  background: #000023 url('../media/banner.jpg') no-repeat;
+  background-size: 50rem;
+  background-position: 100%;
 }
 
 .img-container {
@@ -16,5 +36,5 @@
 }
 
 .main {
-  padding-top: 12rem;
+  /* margin-top: 10rem; */
 }
