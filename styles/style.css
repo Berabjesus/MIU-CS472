@@ -1,0 +1,20 @@
+.debug_border {
+  border: 3px dashed red;
+}
+
+.header {
+  height: 10rem;
+}
+
+.img-container {
+  top: 3rem;
+}
+
+.img {
+  height: 200px;
+  width: 200px;
+}
+
+.main {
+  padding-top: 12rem;
+}
