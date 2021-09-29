@@ -1,0 +1,74 @@
+.debug_b {
+  border: 3px dashed red;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.header {
+  background: url('../media/rotten/bannerbg.png');
+  height: 50px;
+}
+
+.header > img {
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 24pt;
+  font-weight: bold;
+  font-family: Tahoma, Verdana, sans-serif;
+  text-shadow: 3px 3px #999999;
+}
+
+.main {
+  width: 800px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 4px gray solid;
+  border-radius: 20px;
+}
+
+.right-section {
+  width: 250px;
+  background: #A2B964;
+  float: right;
+  clear: both;
+  font-family: Arial, sans-serif;
+  font-size: 8pt;
+}
+
+.right-section > dl {
+  padding-left: 10pt;
+}
+
+.right-section > dl > dd {
+  margin-bottom: 10pt;
+  font-weight: bold;
+}
+
+.right-section > dl > dt {
+  font-weight: bold;
+  font-size: 10pt;
+}
+
+.left-section {
+  width: 542px;
+  float: left;
+}
+
+.left-section-banner-container {
+  background: url('../media/rotten/rbg.png');
+}
+
+.left-section > p {
+  border: gray 2px solid;
+  background: #E8DC9B;
+  font-size: 8pt;
+}
