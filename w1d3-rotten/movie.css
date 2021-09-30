@@ -60,6 +60,10 @@ body {
   font-size: 10pt;
 }
 
+.links {
+  list-style-type: none;
+}
+
 .left-section {
   position: relative;
   width: 542px;
@@ -136,6 +140,7 @@ body {
   width: 800px;
   background: #A2B964;
   text-align: center;
+  z-index: -1;
 }
 
 .validator {
