@@ -74,8 +74,8 @@ body {
 .left-section-banner-container {
   position: relative;
   height: 83px;
+  line-height: 83px;
   background: url('../media/rotten/rbg.png');
-
 }
 
 .left-section-banner-container>img {
@@ -83,11 +83,13 @@ body {
   height: 100%;
 }
 
-.left-section-banner-container>div {
+.left-section-banner-container>h2 {
   display: inline-block;
   font-size: 48pt;
   color: red;
   font-weight: bold;
+  vertical-align: middle;
+  padding-bottom: 70px;
 }
 
 .left-section>p {
