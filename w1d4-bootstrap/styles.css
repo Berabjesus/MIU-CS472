@@ -1,0 +1,27 @@
+main > div {
+  height: 300px;
+}
+
+.grey {
+  background: rgb(207, 199, 199);
+}
+
+.dark{
+  background: rgb(58, 55, 55);
+}
+
+.col-color-1 {
+  background: rgb(170, 143, 143);
+}
+
+.col-color-2 {
+  background: rgb(189, 176, 176);
+}
+
+.col-color-3 {
+  background: rgb(226, 213, 213);
+}
+
+@media screen {
+  
+}
