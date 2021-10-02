@@ -34,7 +34,7 @@ button {
 .container {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 0.25fr 3fr 0.5fr;
 }
 
