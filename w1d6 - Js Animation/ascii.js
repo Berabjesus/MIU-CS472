@@ -1,7 +1,6 @@
 window.onload = function() {
   "use strict";
 
-  const animations = ANIMATIONS;
   const screen = document.getElementById('text-area');
   const startButton = document.getElementById('start');
   const stopButton = document.getElementById('stop');
@@ -10,7 +9,7 @@ window.onload = function() {
   const speedCheckBox = document.getElementById('turbo');
 
   let currentFontClass = null;
-  let selectedAnimation = animations[animationOption.value]
+  let selectedAnimation = ANIMATIONS[animationOption.value]
   let speed = 250;
   let player;
 
@@ -40,8 +39,13 @@ window.onload = function() {
       }, speed);
   } 
 
+  const restart = () => {
+    clearInterval(player)
+    setAnimation(selectedAnimation);
+  }
+
   animationOption.onchange = (e) => {
-    selectedAnimation = animations[e.target.value]
+    selectedAnimation = ANIMATIONS[e.target.value]
     setScreen(selectedAnimation);
   }
 
@@ -50,20 +54,20 @@ window.onload = function() {
   }
 
   startButton.onclick = (e) => {
-    e.target.disabled = true;
+    e.target.disabled = animationOption.disabled = true;
     stopButton.disabled = false;
     setAnimation(selectedAnimation)
   }
 
   stopButton.onclick = (e) => {
     e.target.disabled = true;
-    startButton.disabled = false;
+    startButton.disabled = animationOption.disabled = false;
     clearInterval(player)
+    setScreen(selectedAnimation)
   }
 
   speedCheckBox.onchange = (e) => {
-    speed = e.target.checked ? 50 : 250
-    clearInterval(player)
-    setAnimation(selectedAnimation);
+    speed = e.target.checked ? 50 : 250;
+    restart();
   }
 }
