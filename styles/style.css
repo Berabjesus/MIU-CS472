@@ -3,7 +3,6 @@ body {
   min-height: 100vh;
 }
 
-
 ul {
   display: flex;
   flex-direction: column;
@@ -17,16 +16,6 @@ ul > li{
   border-radius: 7px;
   transition: all 0.1s linear;
   width: auto;
-}
-
-/* ul > li:hover{
-  border: 1px solid rgba(0, 0, 0, 0.473);
-  box-shadow: 1px 1px 4px rgba(153, 144, 144, 0.5);
-  transform: scale(1.02);
-} */
-
-.debug_border {
-  border: 3px dashed red;
 }
 
 .theme-bg1 {
