@@ -19,15 +19,11 @@ ul > li{
   width: auto;
 }
 
-ul > li:hover{
+/* ul > li:hover{
   border: 1px solid rgba(0, 0, 0, 0.473);
   box-shadow: 1px 1px 4px rgba(153, 144, 144, 0.5);
   transform: scale(1.02);
-}
-
-ul li:before {
-  content: '✓'; 
- }
+} */
 
 .debug_border {
   border: 3px dashed red;

@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/style.css">
   <title>Bereket A. Beshane CS472-Assignments </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
+
 <body class="">
   <header class="container-fluid mx-0 px-0 border-bottom border-1 border-dark shadow header">
     <nav class="container position-relative">
@@ -32,28 +36,74 @@
   <main class="container-fluid mx-0 px-0 py-4">
     <div class="offset-4 col-7">
       <h3 class="border-bottom border-2 border-dark pb-3">Assignment Repo Links</h3>
-      <ul class="pt-3">
-        <li><a class="link-info text-decoration-none border-bottom pb-2 ms-2" href="https://github.com/Berabjesus/MIU-CS472" target="_blank">W1D1 - Home Page</a></li>
-        <li><a class="link-info text-decoration-none border-bottom pb-2 ms-2" href="./w1d2-about_me/aboutme.html" target="_blank">W1D2 - About me</a></li>
-        <li><a class="link-info text-decoration-none border-bottom pb-2 ms-2" href="./w1d2-recipe/" target="_blank">W1D2 -recipe</a></li>
-        <li><a class="link-info text-decoration-none border-bottom pb-2 ms-2" href="./w1d3-rotten/tmnt.html" target="_blank">W1D3 - rotten</a></li>
-        <li><a class="link-info text-decoration-none border-bottom pb-2 ms-2" href="./w1d4-grid_and_flex/" target="_blank">W1D4 - responsive design with grid and flex</a></li>
-        <li><a class="link-info text-decoration-none border-bottom pb-2 ms-2" href="./w1d4-bootstrap/" target="_blank">W1D4 - responsive design with Boostrap</a></li>
-        <li><a class="link-info text-decoration-none border-bottom pb-2 ms-2" href="./w1d5 - JavaScript/" target="_blank">W1D 5 - JavaScript</a></li>
-        <li><a class="link-info text-decoration-none border-bottom pb-2 ms-2" href="./w1d6-Js_Animation/ascii.html" target="_blank">W1D6 - JavaScript Animation</a></li>
+      <ul class="pt-3 d-flex">
+
+        <button class="btn w-100 text-start text-white py-3 mb-3 theme-bg1" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseHTMLandCSS" aria-expanded="false" aria-controls="collapseHTMLandCSS">
+          HTML and CSS
+        </button>
+
+        <li class="collapse w-100" id="collapseHTMLandCSS">
+          <ul class="card card-body w-75 mx-auto border-dark shadow">
+            <li class="w-100"><a class="btn btn-outline-dark text-decoration-none pb-2 ms-2 fw-bolder text-info w-100 d-flex justify-content-between align-items-center pe-4"
+                href="https://github.com/Berabjesus/MIU-CS472" target="_blank">W1D1 - Home Page <i class="bi bi-link h4 ms-3 my-0">
+                </i></a></li>
+            <li class="w-100"><a class="btn btn-outline-dark text-decoration-none pb-2 ms-2 fw-bolder text-info w-100 d-flex justify-content-between align-items-center pe-4" href="./w1d2-about_me/aboutme.html"
+                target="_blank">W1 D2 - About me <i class="bi bi-link h4 ms-3 my-0">
+                </i></a></li>
+            <li class="w-100"><a class="btn btn-outline-dark text-decoration-none pb-2 ms-2 fw-bolder text-info w-100 d-flex justify-content-between align-items-center pe-4" href="./w1d2-recipe/"
+                target="_blank">W1 D2 -recipe <i class="bi bi-link h4 ms-3 my-0">
+                </i></a></li>
+            <li class="w-100"><a class="btn btn-outline-dark text-decoration-none pb-2 ms-2 fw-bolder text-info w-100 d-flex justify-content-between align-items-center pe-4" href="./w1d3-rotten/tmnt.html"
+                target="_blank">W1 D3 - rotten <i class="bi bi-link h4 ms-3 my-0">
+                </i></a></li>
+            <li class="w-100"><a class="btn btn-outline-dark text-decoration-none pb-2 ms-2 fw-bolder text-info w-100 d-flex justify-content-between align-items-center pe-4" href="./w1d4-grid_and_flex/"
+                target="_blank">W1 D4 - responsive design with grid and flex <i class="bi bi-link h4 ms-3 my-0">
+                </i></a></li>
+            <li class="w-100"><a class="btn btn-outline-dark text-decoration-none pb-2 ms-2 fw-bolder text-info w-100 d-flex justify-content-between align-items-center pe-4" href="./w1d4-bootstrap/"
+                target="_blank">W1 D4 - responsive design with Boostrap <i class="bi bi-link h4 ms-3 my-0">
+                </i></a></li>
+          </ul>
+        </li>
+
+        <button class="btn w-100 text-start text-white py-3 mb-3 theme-bg1" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseJs" aria-expanded="false" aria-controls="collapseJs">
+          JavaScript
+        </button>
+
+        <li class="collapse show w-100" id="collapseJs">
+          <ul class="card card-body w-75 mx-auto border-dark shadow">
+            <li class="w-100"><a
+                class="btn btn-outline-dark text-decoration-none pb-2 ms-2 fw-bolder text-info w-100 d-flex justify-content-between align-items-center pe-4"
+                href="./w1d5 - JavaScript/" target="_blank">
+                W1 D5 - JavaScript Functions 
+                <i class="bi bi-link h4 ms-3 my-0">
+                </i>
+              </a></li>
+            <li class="w-100"><a class="btn btn-outline-dark text-decoration-none pb-2 ms-2 fw-bolder text-info w-100 d-flex justify-content-between align-items-center pe-4" 
+              href="./w1d6-Js_Animation/ascii.html"
+                target="_blank">W1 D6 - JavaScript Animation <i class="bi bi-link h4 ms-3 my-0">
+                </i></a></li>
+          </ul>
+        </li>
+
       </ul>
     </div>
   </main>
 
   <footer class="container-fluid py-2 fixed-bottom theme-bg1">
     <a href="https://validator.w3.org/nu/?doc=https://berabjesus.github.io/MIU-CS472/" target="_blank">
-        <img alt="link image" src="https://manalabs.org/img/w3c-html.png" />
+      <img alt="link image" src="https://manalabs.org/img/w3c-html.png" />
     </a>
     <a href=" http://jigsaw.w3.org/css-validator/validator?uri=https://berabjesus.github.io/MIU-CS472/" target="_blank">
       <img alt="link image" src="https://manalabs.org/img/w3c-css.png" /></a>
   </footer>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>
