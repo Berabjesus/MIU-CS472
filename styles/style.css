@@ -3,13 +3,13 @@ body {
   min-height: 100vh;
 }
 
-ul {
+.sub-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-ul > li{
+li{
   list-style-type: none;
   margin: 0 0 1rem 0;
   padding: 5px;
