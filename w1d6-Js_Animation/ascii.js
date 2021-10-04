@@ -54,7 +54,7 @@ window.onload = function () {
   };
 
   startButton.onclick = (e) => {
-    e.target.disabled = false;
+    e.target.disabled = true;
     animationOption.disabled = true;
     stopButton.disabled = false;
     setAnimation(selectedAnimation);
