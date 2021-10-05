@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <title>Webform1</title>
+</head>
+<body>
+  <form class="container">
+    <div class="d-flex flex-column">
+      <label class="mb-2" for="email">Email address:</label>
+      <input class="form-control" id="email" type="email" placeholder="Enter email" required >
+      <small class="text-secondary mt-1">We will never share your email with anyone else</small>
+    </div>
+    <div class="d-flex flex-column mt-3">
+      <label class="mb-2" for="password">Password:</label>
+      <input class="form-control" id="password" type="password" placeholder="password" minlength="10" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{10,}" title="Minnimum 10 chars one Uppercase on lowercase one number" required>
+    </div>
+    <div class="d-flex flex-column mt-3">
+      <label class="mb-2" for="url">Website Url:</label>
+      <input class="form-control" id="url" type="url" placeholder="Website url" pattern="(http:|https:)+[^\s]+[\w]" title="only enter a url that starts with http:// or https://" required >
+    </div>
+    <div class="d-flex align-items-center mt-3">
+      <label class="order-1" for="check">Check me out</label>
+      <input class="order-0 me-2" type="checkbox">
+    </div>
+    <button class="btn btn-primary mt-3" type="submit">Submit</button>
+  </form>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
