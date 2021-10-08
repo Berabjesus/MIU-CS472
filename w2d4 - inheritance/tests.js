@@ -12,3 +12,13 @@ describe("bubble sort", function () {
           assert.deepEqual([1, 2, 3, 4], [3, 1, 4, 2].bubbleSort());
       });
 });
+
+describe('Teacher class', () => {
+  it('should instantiate an object of type Teacher with name and age property', 
+    function () {
+      let teacher = new Teacher("john", 30);
+      teacher.name = "john"
+      assert.equal("john is now teaching math", teacher.teach("math"));
+    }
+  );
+});
