@@ -18,10 +18,11 @@ class CheckingAccount extends Account {
     if (amount > this._balance + this._overdraft) {
       throw Error("Insufficient funds");
     }
+    this._balance -= amount;
   }
 
   toString() {
-    return "Account " + this._number + ": balance " + this._balance + " : interest rate " + this._interest + " : overdraft " + this._overdraft;
+    return "Account " + this._number + ": balance " + this._balance + " : overdraft " + this._overdraft;
   }
 
   endOfMonth(){

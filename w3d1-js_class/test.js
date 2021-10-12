@@ -79,5 +79,49 @@ describe("Savings Account", function () {
 
       assert.equal(expect, account.endOfMonth())
   });
+});
 
+describe("Checking Account", function () {
+  let account;
+  before(function(){
+      account = new CheckingAccount(1235, 100);
+      account.deposit(100);
+  });
+
+  it("must be a child of an Account class",
+  function () {
+      assert.equal(true, CheckingAccount.prototype instanceof Account);
+  });
+
+  
+  it("sets and gets overdraft",
+  function () {
+      account.setOverdraft(200);
+      assert.equal(200, account.getOverdraft());
+  });
+
+  it("throws error of the withdraw amount is less than zero",
+  function () {
+      assert.throws(() => account.withdraw(-1) , Error, "Withdraw amount has to be greater than zero");
+  });
+
+  it("throws error of the withdraw amount is greater than balance",
+  function () {
+      assert.throws(() => account.withdraw(301) , Error, "Insufficient funds");
+  });
+
+  it("returns correct string format",
+  function () {
+      let expect = "Account " + account.getNumber() + ": balance " + account.getBalance()+ " : overdraft " + account.getOverdraft();
+      assert.equal(expect, account.toString())
+  });
+
+  it("returns end of month statment",
+  function () {
+      account.withdraw(300)
+    console.log(account.getBalance());
+      let expect = "Warning, low balance CheckingAccount " + account.getNumber() + ": balance: " + account.getBalance() + " overdraft limit: " + account.getOverdraft();
+
+      assert.equal(expect, account.endOfMonth())
+  });
 });
