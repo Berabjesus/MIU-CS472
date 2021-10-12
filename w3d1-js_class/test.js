@@ -125,7 +125,7 @@ describe("Checking Account", function () {
   });
 });
 
-describe("Checking Account", function () {
+describe("Bank", function () {
   let bank;
   before(function(){
     bank = new Bank();
