@@ -12,6 +12,14 @@ class Bank {
     return account.getNumber();
   }
 
+  getAccount(number) {
+    let targetAccount = this._accounts.find(acc => acc.getNumber() === number)
+    if (!targetAccount) {
+      throw Error("account not found");
+    }
+    return targetAccount;
+  }
+
   addSavingsAccount(interest) {
     const account = new SavingsAccount(Bank.nextNumber,interest)
     this._accounts.push(account);

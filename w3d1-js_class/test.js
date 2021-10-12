@@ -119,9 +119,39 @@ describe("Checking Account", function () {
   it("returns end of month statment",
   function () {
       account.withdraw(300)
-    console.log(account.getBalance());
       let expect = "Warning, low balance CheckingAccount " + account.getNumber() + ": balance: " + account.getBalance() + " overdraft limit: " + account.getOverdraft();
 
       assert.equal(expect, account.endOfMonth())
+  });
+});
+
+describe("Checking Account", function () {
+  let bank;
+  before(function(){
+    bank = new Bank();
+    bank.addAccount();
+    bank.addCheckingAccount();
+    bank.addSavingsAccount();
+  });
+
+  it("returns the newly created account number",
+  function () {
+      assert.equal(10003, bank.addAccount());
+  });
+
+  it("returns the newly created savings account number",
+  function () {
+      assert.equal(10004, bank.addSavingsAccount());
+  });
+
+  it("returns the newly created checkings account number",
+  function () {
+      assert.equal(10005, bank.addCheckingAccount());
+  });
+
+  it("deletes the given account",
+  function () {
+      bank.closeAccount(10005)
+      assert.throws(() => bank.getAccount(10005) , Error, "account not found");
   });
 });
