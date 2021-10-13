@@ -18,7 +18,7 @@
   width: 100px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.281);
-  transition: all 0.3s linear;
+  /* transition: all 0.05s linear; */
 }
 .circle:hover{
   cursor: pointer;
