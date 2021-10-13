@@ -29,8 +29,8 @@ $(document).ready(function () {
   $('#start').click(function (e) {
     e.preventDefault();
     $(this).text($(this).text() === 'start' ? 'stop' : 'start')
-    numberOfCircles = $('#circlesValue').val()
     if (interval === null) {
+      console.log(width, growthAmount, intervalChange, numberOfCircles);
       render(width);
       let newDimension = parseInt(width)
       interval = setInterval(() => {
