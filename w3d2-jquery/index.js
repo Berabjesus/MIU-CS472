@@ -32,29 +32,25 @@ $(document).ready(function () {
     numberOfCircles = $('#circlesValue').val()
     if (interval === null) {
       render(width);
-      startInterval();
+      let newDimension = parseInt(width)
+      interval = setInterval(() => {
+        newDimension += parseInt(growthAmount)
+        $('.circle').each(function () {
+          $(this).width(newDimension)
+          $(this).height(newDimension)
+        });
+      }, intervalChange);
     } else {
-      endInterval();
+      clearInterval(interval)
+      interval = null;
+      numberOfCircles = 1
+      width = 100;
+      growthAmount = 12;
+      intervalChange = 250;
+      elements = $();
+      $('#circlesValue').val('')
     }
   })
-
-  function startInterval() {
-    let newDimension = parseInt(width)
-    interval = setInterval(() => {
-      newDimension += parseInt(growthAmount)
-      $('.circle').each(function () {
-        $(this).width(newDimension)
-        $(this).height(newDimension)
-      });
-    }, intervalChange);
-  }
-
-  function endInterval() {
-    clearInterval(interval)
-    interval = null;
-    numberOfCircles = 1
-    $('#circlesValue').val('')
-  }
 
   function render(width) {
     if (numberOfCircles <= 0) {
