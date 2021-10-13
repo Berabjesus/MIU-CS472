@@ -39,18 +39,14 @@ $(document).ready(function () {
     growthAmount = $('#growthAmount').val()  === '' ? growthAmount : $('#growthAmount').val();
     intervalChange = $('#interval').val()  === '' ? intervalChange : $('#interval').val();
     numberOfCircles = $('#circlesValue').val() === '' ? numberOfCircles :  $('#circlesValue').val();
-    console.log(width,growthAmount, intervalChange, numberOfCircles);
   }
 
   function render(width) {
     if (numberOfCircles <= 0) {
       $('#container').append(elements)
-      console.log(elements);
-
       return;
     }
     let randomX = Math.floor((Math.random() * ($(window).width() / 2) + width)) + 1
-    console.log(randomX);
     let randomColor = Math.floor(Math.random() * 16777215).toString(16);
     randomColor = randomColor === "ffffff" ? "000000" : randomColor;
     let circle = $("<div>", {
