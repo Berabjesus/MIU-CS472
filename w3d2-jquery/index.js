@@ -48,7 +48,7 @@ $(document).ready(function () {
       growthAmount = 12;
       intervalChange = 250;
       elements = $();
-      $('#circlesValue').val('')
+      $('#circlesValue').val("")
     }
   })
 
