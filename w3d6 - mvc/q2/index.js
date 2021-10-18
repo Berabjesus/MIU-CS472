@@ -13,7 +13,6 @@ app.get('/', (req, res) => {
 app.post('/result', (req, res) => {
     let name = req.body.name;
     let age = req.body.age;
-    console.log(name,age);
     res.render('result', {name : name, age : age})
 });
 app.listen(3000);

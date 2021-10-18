@@ -1,0 +1,12 @@
+<ul class="list-group col-6 mx-auto">
+    <% for (const key in cart) { %> 
+      <li class="list-group-item border border-3">
+        <%= key %>
+        <ul>
+          <li>name : - <%= cart[key].name %> </li>
+          <li>quantity : - <%= cart[key].quantity %> </li>
+          <li>price : - <%= cart[key].price %> </li>
+        </ul>
+      </li>
+      <% } %> 
+</ul>

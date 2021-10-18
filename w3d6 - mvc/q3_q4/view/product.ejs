@@ -1,0 +1,17 @@
+<form class="d-flex flex-column align-items-start" action="/addToCart?name=<%= item.name %>&price=<%= item.price %> " method="post">
+  <ul> 
+    <li class="list-group-item d-flex justify-content-start">
+      Type : - <%= item.type %> 
+    </li>
+    <li class="list-group-item d-flex justify-content-start">
+      Name : - <%= item.name %> 
+    </li>
+    <li class="list-group-item d-flex justify-content-start">
+      Price : - <%= item.price %> 
+    </li>
+    <li class="list-group-item d-flex justify-content-start">
+      Description : - <%= item.description %> 
+    </li>
+  </ul>
+  <button type="submit" class="btn btn-success mx-auto">Add to cart</button>
+</form>  
