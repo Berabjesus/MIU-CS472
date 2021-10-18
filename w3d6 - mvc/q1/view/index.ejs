@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <title>Current time</title>
+    <% if (time.split(':')[0] > 6 && time.split(':')[0] < 18) { %>
+      <link rel="stylesheet" href="../styles/dayTime.css">
+    <% } else %>
+      <link rel="stylesheet" href="../styles/nightTime.css">
+  </head>
+  <body>
+    This page was loaded at <%= time %>
+  </body>
+</html>
