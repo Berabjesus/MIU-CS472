@@ -10,17 +10,7 @@ app.use(express.urlencoded({
   extended: true
 }))
 
-// app.use('/', (req, res, next) => {
-
-//   console.log(req.cookies);
-//   next()
-//   // res.locals.cookies = 
-// })
-
 app.get('/', (req, res) => {
-  // for (const key in req.cookies) {
-  //   console.log(key);
-  // }
   res.render('index', {
     cookies : req.cookies
   })

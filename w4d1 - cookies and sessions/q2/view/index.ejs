@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <title>Doc</title>
+    <% if (time.split(':')[0] > 6 && time.split(':')[0] < 18) { %>
+      <link rel="stylesheet" href="../styles/dayTime.css">
+    <% } else {%>
+      <link rel="stylesheet" href="/styles/nightTime.css">
+      <% } %> 
+  </head>
+  <body>
+    <form action="/result" method="post">
+      <label>Name: <input id="name" name="name" type="text"></label>
+      <label>Age: <input id="age" name="age" type="text"></label>
+      <input type="submit" value="Submit Query">
+    </form>
+  </body>
+</html>
