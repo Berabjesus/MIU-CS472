@@ -1,0 +1,7 @@
+<ul class="list-group col-6 mx-auto">
+  <% products.map( product => {%>
+  <li class="list-group-item d-flex justify-content-between">
+    <a class="btn btn-primary" href="/product/<%= product.id %>"><%= product.name %></a>
+  </li>
+  <% }) %>
+</ul>
