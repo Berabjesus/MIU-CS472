@@ -1,0 +1,17 @@
+<form class="d-flex flex-column align-items-start" id="form">
+  <ul> 
+    <li class="list-group-item d-flex justify-content-start">
+      Type : - <span id="type"> <%= item.type %></span> 
+    </li>
+    <li class="list-group-item d-flex justify-content-start">
+      Name : - <span id="itemName"> <%= item.name %> </span>
+    </li>
+    <li class="list-group-item d-flex justify-content-start">
+      Price : - <span id="itemPrice"> <%= item.price %> </span>
+    </li>
+    <li class="list-group-item d-flex justify-content-start">
+      Description : - <span id="desc"> <%= item.description %> 
+    </li>
+  </ul>
+  <button type="submit" class="btn btn-success mx-auto">Add to cart</button>
+</form>  
